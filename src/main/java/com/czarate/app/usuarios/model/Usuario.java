@@ -20,10 +20,12 @@ import org.springframework.format.annotation.DateTimeFormat;
 import com.czarate.app.usuarios.dto.UsuarioDTO;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name="usuarios")
 @Data
+@NoArgsConstructor//Necesita
 public class Usuario implements Serializable {
 
 	private static final long serialVersionUID = 1L;
